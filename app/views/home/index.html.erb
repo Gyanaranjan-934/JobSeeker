@@ -1,0 +1,26 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Macondo&family=Philosopher&family=Playball&family=Sacramento&family=Smooch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Macondo&family=Oleo+Script&family=Philosopher&family=Playball&family=Sacramento&family=Smooch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Macondo&family=Smooch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Macondo&family=Sacramento&family=Smooch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Macondo&family=Philosopher&family=Sacramento&family=Smooch&display=swap" rel="stylesheet">
+<body class="home_container">
+	<% if user_signed_in? %>
+		<% if current_user && current_user.admin %>
+			<h1 class="welcome_text"> Welcome Admin</h1>
+			<br>
+	<% else %>
+	<h1 class="welcome_text">Welcome <%= current_user.first_name %></h1>
+	<br>
+	<% end %>
+	<% end %>
+	<h1 class="home_texts" >
+		FIND YOUR CAREER, YOU DESERVE IT
+	</h1>
+	<br><br>
+	<p id="home_text">Nothing in the world can take the place of persistence. Talent will not; nothing is more common than unsuccessful men with talent. Genius will not; unrewarded genius is almost a proverb. Education will not; the world is full of educated derelicts. Persistence and determination alone are omnipotent. The slogan “press on” has solved and will always solve the problems of the human race. — Calvin Coolidge
+
+</p>
+</body>
+	

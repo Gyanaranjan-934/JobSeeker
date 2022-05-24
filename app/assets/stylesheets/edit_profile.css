@@ -1,0 +1,50 @@
+body{
+	/*background: rgb(99, 39, 120)*/
+}
+.form-control:focus{
+	box-shadow: none;
+	border-color: #BA68C8
+}
+.profile-button{
+	background: rgb(99, 39, 120);
+	box-shadow: none;
+	border: none
+}
+.profile-button:hover{
+	background: #682773
+}
+.profile-button:focus{
+	background: #682773;
+	box-shadow: none
+}
+.profile-button:active{
+	background: #682773;
+	box-shadow: none
+}
+.back:hover{
+	color: #682773;
+	cursor: pointer
+}
+.labels{
+	font-size: 11px
+}
+.add-experience:hover{
+	background: #BA68C8;
+	color: #fff;
+	cursor: pointer;
+	border: solid 1px #BA68C8
+}
+/*.btn-bd-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet);
+  --bs-btn-border-color: var(--bd-violet);
+  --bs-btn-border-radius: .5rem;
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #shade-color($bd-violet, 10%);
+  --bs-btn-hover-border-color: #shade-color($bd-violet, 10%);
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #shade-color($bd-violet, 20%);
+  --bs-btn-active-border-color: #shade-color($bd-violet, 20%);
+}*/

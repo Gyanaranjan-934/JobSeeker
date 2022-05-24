@@ -1,0 +1,87 @@
+<!-- <h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "Log in" ,data:{turbo:false} %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %> -->
+
+
+
+
+
+
+
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="Login_div_main">
+  <div id="form_wrapper" style="width: 1000px;height: 541.04px;">
+    <div id="form_left">
+      <img src="https://ecurater.com/wp-content/uploads/2020/10/login1.png" />
+    </div>
+    <div id="form_right">
+      <h1 style="color:white">Member Login</h1>
+      <div class="input_container">
+        <i class="fas fa-envelope"></i>
+        <!-- <input
+          placeholder="Email"
+          type="email"
+          name="Email"
+          id="field_email"
+          class="input_field"
+        /> -->
+        <%= f.email_field :email, autofocus: true, autocomplete: "email",class:"input_field", id:"field_email" %>
+      </div>
+      <div class="input_container">
+        <i class="fas fa-lock"></i>
+        <!-- <input
+          placeholder="Password"
+          type="password"
+          name="Password"
+          id="field_password"
+          class="input_field"
+        /> -->
+        <%= f.password_field :password, autocomplete: "current-password" , id:"field_password", class:"input_field"%>
+
+      </div>
+      <% if devise_mapping.rememberable? %>
+    <div class="field" style="color:white">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+      <!-- <input
+        type="submit"
+        value="Login"
+        ,id:"input_submit",
+        class:"input_field"
+      /> -->
+          <%= f.submit "Log in" ,data:{turbo:false},id:"input_submit",class:"input_field" %>
+        <span>
+          <%= render "devise/shared/links" %>
+        </span>
+      
+    </div>
+  </div>
+</div>
+<% end %>
+

@@ -1,0 +1,509 @@
+.home_container{
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation-name: example;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+
+
+	background-image: url("c1.webp");
+   /* background-image: url(gyana.jpg);*/
+
+   /* background-attachment: fixed;
+    background-size: 100% 100%;*/
+    
+  /*background-color: black;*/
+}
+@keyframes example {
+  0%   {background-image: url("c2.webp");background-repeat: no-repeat;
+  background-attachment: fixed;background-size: 100% 100%;}
+  10%  {background-image: url("c3.webp");background-repeat: no-repeat;
+  background-attachment: fixed;background-size: 100% 100%;}
+  20%  {background-image: url("c4.webp");background-repeat: no-repeat;
+  background-attachment: fixed;background-size: 100% 100%;}
+  30%  {background-image: url("c5.webp");background-repeat: no-repeat;
+  background-attachment: fixed;background-size: 100% 100%;}
+  40% {background-image: url("c6.webp");background-repeat: no-repeat;
+  background-attachment: fixed;background-size: 100% 100%;}
+  50% {background-image: url("c7.webp");background-repeat: no-repeat;
+  background-attachment: fixed;background-size: 100% 100%;}
+  60% {background-image: url("c8.webp");background-repeat: no-repeat;
+  background-attachment: fixed;background-size: 100% 100%;}
+  70% {background-image: url("c9.webp");background-repeat: no-repeat;
+  background-attachment: fixed;background-size: 100% 100%;}
+  80% {background-image: url("c10.webp");background-repeat: no-repeat;
+  background-attachment: fixed;background-size: 100% 100%;}
+  90% {background-image: url("c11.webp");background-repeat: no-repeat;
+  background-attachment: fixed;background-size: 100% 100%;}
+  100% {background-image: url("c12.webp");background-repeat: no-repeat;
+  background-attachment: fixed;background-size: 100% 100%;}
+}
+.home_texts
+{
+    font: bold;
+    color: whitesmoke;
+    margin-top: 5%;
+    text-align: center;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Oleo Script', cursive;
+
+}
+#home_text{
+    margin: 3% 10% 5% 10%;
+    color: whitesmoke;
+    /*font-family: 'Sacramento', cursive;*/
+    font-family: 'Playball', cursive;
+
+    font-size: 200%;
+}
+.welcome_text{
+    margin-top: 5%;
+    font-size: 300%;
+    color: whitesmoke;
+    font-family: 'Philosopher', sans-serif;
+    text-align: left;
+}
+
+/*ABOUT CONTAINER*/
+
+
+.about_acontainer{
+    /*background-image: url("https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;*/
+  /*background-color: #0F0E0E;*/
+}
+/*.friend_table{
+    margin-top: 50px;
+}*/
+.team{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 2.5em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /*font-weight: bold;*/
+    scroll-behavior: smooth;
+    transition: transform 300ms ease-in-out;
+}
+
+.about_headings{
+    text-align: center;
+}
+
+.main_div{
+    background-color: beige;
+    text-align: center;
+    margin: 5% 0%;
+}
+
+.main_div1{
+    background-color: rgb(33 37 41);
+    text-align: center;
+    margin-top: 5% ;
+    margin-left: -15.1%;
+    margin-right: -15%;
+    margin-bottom: 0px;
+
+    height: 70px;
+
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body_about {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #261C2C;
+    min-height: 100vh;
+    width: 100%px;
+}
+
+.acontainer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0%;
+    width: 100%;
+}
+
+.acontainer .card {
+    position: relative;
+    width: 22%;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.acontainer .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.acontainer .card:hover .content {
+    transform: translateY(-20px);
+}
+
+.acontainer .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.acontainer .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.acontainer .card .content .contentBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.acontainer .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.acontainer .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    padding-left: 0px;
+}
+
+.acontainer .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.acontainer .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.acontainer .card .sci li a {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* Job  Show Page*/
+
+body{
+    font-family: arial;
+    background-color: #070739;
+
+}
+.logo{
+    border: 1px solid #f6f6f6;
+}
+
+.logo img{
+    float: left;
+    margin-right: 20px;
+    width: 130px;
+    height: 130px;
+}
+.card{
+    display: block;
+    padding: 3vh 2vh 7vh 5vh;
+    border: none;
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 500px;
+}
+.icard{
+    display: block;
+    padding: 3vh 2vh 7vh 5vh;
+    border: none;
+    border-radius: 30px;
+    /*margin-top: 5%;*/
+    /*margin-bottom: 5%;*/
+    background-color: #261C2C;
+    width: 1000px;
+    height: 85% ;
+    border-radius: 4rem!important;
+}
+.header{
+    margin-bottom: 5vh;
+    margin-right: 2vh;
+    float: right;
+    margin-left: auto;
+}
+
+.far{
+    color: rgba(15, 198, 239, 0.97)!important;
+    font-size: 16px!important;
+}
+p.heading{
+    font-weight: bold;
+    font-size: 25px;
+}
+p.text-muted{
+    font-size: 17px;
+    font-weight: bold;
+    color: #a1a7ae!important;
+}
+.btn-sm{
+    border-radius: 8px;
+}
+.fas.fa-users{
+    color: rgba(15, 198, 239, 0.97)!important;
+}
+.mutual span{
+    font-size: 14px;
+    color: #adb5bd;
+    font-weight: bold;
+}
+.btn-primary.btn-lg{
+    border-radius: 30px;
+    width: 90%;
+    border: none;
+    background: #8c02e3;
+}
+.btn-dark.btn-lg{
+    border-radius: 30px;
+    width: 90%;
+    border: none;
+    background: #dee2e6;
+}
+.btn-dark span{
+    font-size: 14px;
+    text-align: center;
+    color: #0000008c;
+    font-weight: bold;
+}
+.btn-primary span{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/*Sign Up*/
+
+.fname{
+    float: left;
+}
+.lname{
+    float: right;
+}
+.card-img-left {
+  width: 45%;
+  /* Link to your background image using in the property below! */
+  /*background: scroll center url("https://scribie.com/assets/front/illustrations/Welcome-to-scribie-512x391.svg");*/
+  background-size: cover;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+.btn-google {
+  color: white !important;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white !important;
+  background-color: #3b5998;
+}
+
+
+
+
+
+/*Login*/
+
+:root {
+  --body_gradient_left: #7200d0;
+  --body_gradient_right: #c800c1;
+  --form_bg: #ffffff;
+  --input_bg: #e5e5e5;
+  --input_hover: #eaeaea;
+  --submit_bg: #1fcc44;
+  --submit_hover: #40e263;
+  --icon_color: #6b6b6b;
+}
+/** {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}*/
+.Login_div_main{
+  /* make the body full height*/
+  height: 100vh;
+  /* set our custom font */
+  font-family: 'Roboto', sans-serif;
+  /* create a linear gradient*/
+  background-thumbnail: linear-gradient(
+    to right,
+    var(--body_gradient_left),
+    var(--body_gradient_right)
+  );
+  display: flex;
+}
+#form_wrapper {
+  width: 1000px;
+  height: 700px;
+  /* this will help us center it*/
+  margin: auto;
+  background-color:#261C2C ;
+  border-radius: 50px;
+  /* make it a grid container*/
+  display: grid;
+  /* with two columns of same width*/
+  grid-template-columns: 1fr 1fr;
+  /* with a small gap in between them*/
+  grid-gap: 5vw;
+  /* add some padding around */
+  padding: 5vh 15px;
+}
+#form_left {
+  /* center the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form_left img {
+  width: 350px;
+  height: 350px;
+}
+#form_right {
+  display: grid;
+  /* single column layout */
+  grid-template-columns: 1fr;
+  /* have some gap in between elements*/
+  grid-gap: 20px;
+  padding: 10% 5%;
+}
+.input_container {
+  background-color: #e8f0fe;
+  /* vertically align icon and text inside the div*/
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.input_container:hover {
+  background-color: #e8f0fe;
+}
+.input_container,
+#input_submit {
+  height: 60px;
+  /* make the borders more round */
+  border-radius: 30px;
+  width: 100%;
+}
+.input_field {
+  /* customize the input tag with lighter font and some padding*/
+  background-color: inherit;
+  width: 90%;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-left: 30px;
+}
+.input_field:hover,
+.input_field:focus {
+  /* remove the outline */
+  outline: none;
+}
+#input_submit {
+  /* submit button has a different color and different padding */
+  background-color: var(--submit_bg);
+  padding-left: 0;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+#input_submit:hover {
+  background-color: var(--submit_hover);
+  /* simple color transition on hover */
+  transition: background-color, 1s;
+  cursor: pointer;
+}
+h1,
+span {
+  text-align: center;
+}
+/* shift it a bit lower */
+#create_account {
+  display: block;
+  position: relative;
+  top: 30px;
+}
+a {
+  /* remove default underline */
+  text-decoration: none;
+  color: var(--submit_bg);
+  font-weight: bold;
+}
+a:hover {
+  color: var(--submit_hover);
+}
+i {
+  color: var(--icon_color);
+}
+@media screen and (max-width: 768px) {
+  /* make the layout  a single column and add some margin to the wrapper */
+  #form_wrapper {
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /* on small screen we don't display the image */
+  #form_left {
+    display: none;
+  }
+}
+
+/*forgot password*/
+.form-gap {
+    padding-top: 70px;
+}

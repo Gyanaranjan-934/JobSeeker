@@ -1,0 +1,138 @@
+
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+<div class="sign_up_div">
+  <div class="sign_up_container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="icard flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+          <div class="card-img-left d-none d-md-flex">
+            <!-- Background image for card set in CSS! -->
+            <img src="https://scribie.com/assets/front/illustrations/Welcome-to-scribie-512x391.svg", class="reg">
+
+
+
+
+
+          
+          <div class="card-div p-4 p-sm-7" style="width: 300px; max-width: 300px;">
+            <h1 class="card-title text-center mb-5 fw-light" style="color: white;margin-bottom: 10px;margin-top: 0px;width: 365px;">Register</h1>
+            <form>
+
+              
+
+
+
+              <div class="row mt-2 " style="width: 390px;">
+                    <div class="col-md-5" style="width: 194px;">
+                      <!-- <input type="text" class="form-control" placeholder="first name" value=""> -->
+                      <%= f.text_field :first_name, autofocus: true, autocomplete: "first_name" ,class:"form-control" , placeholder:"First Name", style:"height: 54px;"%>
+                    </div>
+                    <div class="col-md-5" style="width: 194px;" >
+                      <%= f.text_field :last_name, autofocus: true, autocomplete: "last_name" ,class:"form-control" , placeholder:"Last Name", style:"height: 54px; "%>
+                    </div>
+
+                </div>
+                <br>
+              <div class="field form-group" style="width: 365px;">   
+                <%= f.email_field :email, autofocus: true, autocomplete: "email" ,class:"form-control" , placeholder:"name@example.com", style:"height: 54px;"%>
+              </div>
+
+
+        <!-- password and confirm password -->
+              <div class="field form-group" style="width: 365px;">
+                
+                <% f.label :password %>
+                <% if @minimum_password_length %>
+                
+                <% end %><br />
+                <%= f.password_field :password, autocomplete: "new-password" ,class:"form-control", id:"floatingPassword" ,placeholder:"Password", style:"height: 54px;" %>
+              </div>
+
+              <div class="field form-group" style="width: 365px;">
+                
+                 <% f.label :password_confirmation %><br />
+                  <%= f.password_field :password_confirmation, autocomplete: "new-password",class:"form-control", id:"floatingPasswordConfirm" ,placeholder:"Confirm Password", style:"height: 54px;" %>
+              </div>
+
+
+              <br>
+
+
+            <div class="row mt-2 " style="width: 390px;">  
+              <div class="fcol-md-5" style="width: 194px;">   
+                <%= f.text_field :phone, autofocus: true, autocomplete: "phone" ,class:"form-control" , placeholder:"Phone Number", style:"height: 54px;"%>
+              </div>
+
+              <div class="fcol-md-5" style="width: 194px;">   
+                <%= f.text_field :education, autofocus: true, autocomplete: "education" ,class:"form-control" , placeholder:"Education", style:"height: 54px;"%>
+              </div>
+            </div>
+        <!-- state and country -->
+            <div class="row mt-2 " style="width: 390px;">
+              <div class="col-md-5" style="width: 194px;">   
+                <%= f.text_field :state, autofocus: true, autocomplete: "state" ,class:"form-control" , placeholder:"State", style:"height: 54px;"%>
+              </div>
+
+              <div class="col-md-5" style="width: 194px;">   
+                <%= f.text_field :country, autofocus: true, autocomplete: "country" ,class:"form-control" , placeholder:"Country", style:"height: 54px;"%>
+              </div>
+            </div>
+
+
+              
+              <br>
+              <div class="d-grid mb-2" style="width: 365px;">
+                <%= f.submit "Sign up" ,data:{turbo:false}, class:"btn btn-success"%>
+              </div>
+
+              <p class="d-block text-center mt-3 large " style="width: 365px;  color: white;">Already have an account?</p>
+              <div class="d-grid mb-2" style="width: 365px;">
+                <%= link_to "Log in"  ,new_user_session_path,class:"btn btn-info" %>
+              </div>
+
+              <hr class="my-4" style="width: 365px; background-color: white;">
+
+
+
+
+          <div>
+              <!-- <div class="d-grid mb-2" style="width: 365px;">
+                <button class="btn btn-lg btn-google btn-login fw-bold text-uppercase" type="submit">
+                  <i class="fab fa-google me-2"></i> Sign up with Google
+                </button>
+              </div> -->
+
+              <p style="color: white;width:365px  ; margin-left: 20px;"> sign up with   <!-- <a href="https://www.linkedin.com/in/prasantsethi/"><img style="margin: 0px 20px; " src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1652666361~hmac=607aeef05795bc9727f7ad90fac93e82" width="50px"></a > -->
+              <%= image_tag "gmail.png", height: 45 %>  |   
+
+                <!-- <a href="https://www.instagram.com/kumar15_prasant/"><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/900px-Instagram_icon.png?20200512141346"style="width: 50px; margin: 0px 20px;" ></a> -->
+                <%= image_tag "facebook.png", height: 45 %>  
+                  
+                </p>
+
+
+              <!-- <div class="d-grid" style="width: 365px;">
+                <button class="btn btn-lg btn-facebook btn-login fw-bold text-uppercase" type="submit">
+                  <i class="fab fa-facebook-f me-2"></i> Sign up with Facebook
+                </button>
+              </div> -->
+
+          </div>
+
+
+
+
+
+            </form>
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
