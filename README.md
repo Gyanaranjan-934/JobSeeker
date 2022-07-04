@@ -1,4 +1,4 @@
-# README
+# app/views/layouts/application.html.erb
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
